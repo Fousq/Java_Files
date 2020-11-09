@@ -20,3 +20,9 @@ References:
 Additional links to conference presentation or popular education videos:
 
 * <a href="https://www.youtube.com/watch?v=7GlMS630dt8">Дмитрий Говорухин — Эффективная работа с файлами для Java-разработчиков</a>
+
+## Task 6
+
+If your database * has pre-defined storage procedure, use a few of them to print out interesting information or maintain something in the database.
+
+Use MySQL or PostgreSQL or Oracle.
