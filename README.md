@@ -20,3 +20,7 @@ References:
 Additional links to conference presentation or popular education videos:
 
 * <a href="https://www.youtube.com/watch?v=7GlMS630dt8">Дмитрий Говорухин — Эффективная работа с файлами для Java-разработчиков</a>
+
+## Task 1
+
+Add the ability to serialize / deserialize for the hierarchy of objects from another homework. However, all numerical fields should not be serialized. Provide a test code in which you create several instances of various classes of this hierarchy and successfully complete the serialization/deserialization operation.
