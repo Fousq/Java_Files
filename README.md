@@ -20,3 +20,18 @@ References:
 Additional links to conference presentation or popular education videos:
 
 * <a href="https://www.youtube.com/watch?v=7GlMS630dt8">Дмитрий Говорухин — Эффективная работа с файлами для Java-разработчиков</a>
+
+## Task 3
+
+Write several versions of the FastFileMover utility, which moves a file from one directory to another directory. It takes both file paths as a command line parameters. All exceptions must be handled correctly.
+
+Required functionality:
+
+1. (5 points) It uses FileStreams
+2. (5 points) It uses FileStreams with buffer 100 kb
+3. (5 points) It uses FileChannel
+4. (5 points) It uses NIO 2 File API
+
+After that prepare a performance report based on next requirements.
+
+Measure the time for copying, run on several reference files of different sizes (1 Kb, 100 Kb, 10 Mb, 1 GB). On each file, run 1000 times, get the average time.
