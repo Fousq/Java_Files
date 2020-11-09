@@ -20,3 +20,7 @@ References:
 Additional links to conference presentation or popular education videos:
 
 * <a href="https://www.youtube.com/watch?v=7GlMS630dt8">Дмитрий Говорухин — Эффективная работа с файлами для Java-разработчиков</a>
+
+## Task 4
+
+Add five DBUnit tests to appropriate project (pet project) or another. Prepare test datasets if it is required.
