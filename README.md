@@ -20,3 +20,20 @@ References:
 Additional links to conference presentation or popular education videos:
 
 * <a href="https://www.youtube.com/watch?v=7GlMS630dt8">Дмитрий Говорухин — Эффективная работа с файлами для Java-разработчиков</a>
+
+## Task 8
+
+Write your own annotation-based or XML-based JabaORM that parses specific class and generates SQL-queries for CRUD (or SCRUD) operations.
+
+Your mini-ORM should have one entry point, which supports CRUD operations for parsed class passed as a parameter in
+
+* .save
+* .load
+* .update
+* .delete
+
+methods.
+
+Implement all actions via RowSet if it is possible.
+
+Bonus: inheritance support will be a plus (+5 points).
