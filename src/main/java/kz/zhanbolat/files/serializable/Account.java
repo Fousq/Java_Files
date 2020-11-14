@@ -4,6 +4,7 @@ import java.io.Serializable;
 import java.util.Objects;
 
 public class Account implements Serializable {
+    private static final long serialVersionUID = 6463281222837815802L;
     private transient Long id;
     private String name;
     private Balance balance;

@@ -5,6 +5,7 @@ import java.math.BigDecimal;
 import java.util.Objects;
 
 public class Balance implements Serializable {
+    private static final long serialVersionUID = 1163909329610902749L;
     private String currency;
     private BigDecimal amount;
     private BigDecimal exchangeRate;
