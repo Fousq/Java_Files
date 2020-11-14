@@ -3,12 +3,33 @@
  */
 package kz.zhanbolat.files;
 
+import org.apache.logging.log4j.LogManager;
+import org.apache.logging.log4j.Logger;
+
+import java.io.BufferedReader;
+import java.io.IOException;
+import java.io.InputStreamReader;
+
 public class App {
-    public String getGreeting() {
-        return "Hello world.";
-    }
+    private static final Logger logger = LogManager.getLogger(App.class);
+    private static final int DEFAULT_NUMBER = 5;
 
     public static void main(String[] args) {
-        System.out.println(new App().getGreeting());
+        BufferedReader bufferedReader = new BufferedReader(new InputStreamReader(System.in));
+        String path = null;
+        int number = 0;
+        try {
+            logger.info("Enter the path: ");
+            path = bufferedReader.readLine();
+            logger.info("Enter the number: ");
+            number = Integer.parseInt(bufferedReader.readLine());
+        } catch (IOException e) {
+            logger.error(e);
+        } catch (NumberFormatException e) {
+            logger.error(e);
+            number = DEFAULT_NUMBER;
+        }
+        DiskAnalyzer diskAnalyzer = new DiskAnalyzer();
+        diskAnalyzer.analyze(path, number);
     }
 }
