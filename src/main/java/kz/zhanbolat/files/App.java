@@ -4,11 +4,13 @@
 package kz.zhanbolat.files;
 
 public class App {
-    public String getGreeting() {
-        return "Hello world.";
-    }
 
     public static void main(String[] args) {
-        System.out.println(new App().getGreeting());
+        if (args.length < 2) {
+            throw new IllegalArgumentException("Usage: <from> <to>");
+        }
+
+        FastFileMover fastFileMover = new FastFileMoverFileStreams();
+        fastFileMover.moveFile(args[0], args[1]);
     }
 }
