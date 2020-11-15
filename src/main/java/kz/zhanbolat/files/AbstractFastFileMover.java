@@ -28,15 +28,16 @@ public abstract class AbstractFastFileMover {
         if (toFile.isFile()) {
             return new FileOutputStream(toFile);
         } else {
-            File createToFile = new File(toFile.getAbsolutePath().concat("/" + fromFileName));
-            File createdToFile;
-            if (!createToFile.exists()) {
-                Path filePath = Files.createFile(createToFile.toPath());
-                createdToFile = filePath.toFile();
-            } else {
-                createdToFile = createToFile;
-            }
+            File createdToFile = createToFile(new File(toFile.getAbsolutePath().concat("/" + fromFileName)).toPath());
             return new FileOutputStream(createdToFile);
         }
+    }
+
+    protected File createToFile(Path toPath) throws IOException {
+        if (!toPath.toFile().exists()) {
+            Path filePath = Files.createFile(toPath);
+            return filePath.toFile();
+        }
+        return toPath.toFile();
     }
 }
