@@ -10,7 +10,7 @@ public class App {
             throw new IllegalArgumentException("Usage: <from> <to>");
         }
 
-        FastFileMover fastFileMover = new FastFileMoverBufferedFileStreams();
+        FastFileMover fastFileMover = new FastFileMoverFileChannel();
         fastFileMover.moveFile(args[0], args[1]);
     }
 }
