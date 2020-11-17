@@ -35,3 +35,49 @@ Required functionality:
 After that prepare a performance report based on next requirements.
 
 Measure the time for copying, run on several reference files of different sizes (1 Kb, 100 Kb, 10 Mb, 1 GB). On each file, run 1000 times, get the average time.
+
+## Measurement
+
+Without creating file:
+* 1 Kb:
+    1. 3 ms
+    2. 3 ms
+    3. 16 ms
+    4. 8 ms
+* 102 Kb:
+    1. 224 ms
+    2. 10 ms
+    3. 8 ms
+    4. 5 ms
+* 31 MB:
+    1. 66363 ms = 1 m 3 s
+    2. 771 ms
+    3. 251 ms
+    4. 5 ms
+* 1 GB:
+    1. 2303941 ms or more, so no measurement can be provided
+    2. 26032 ms
+    3. 6498 ms
+    4. 5 ms
+
+With creating file:
+* 1Kb:
+    1. 5 ms
+    2. 6 ms
+    3. 6 ms
+    4. 6 ms
+* 102 Kb:
+    1. 252 ms
+    2. 12 ms
+    3. 14 ms
+    4. 7 ms
+* 31 MB:
+    1. 68839 ms = 1 m 8 s
+    2. 771 ms
+    3. 251 ms
+    4. 6 ms
+* 1 GB:
+    1. 2303941 ms
+    2. 26046 ms
+    3. 6446 ms
+    4. 10 ms
